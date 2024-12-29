@@ -41,18 +41,25 @@ const Calculator = () => {
 
   const calOperation = () => {
     console.log("Hello");
-    let total = null;
 
     if (operation === "+") {
       //   console.log("operation==========>", operation);
       //   console.log(firstValue, secondValue);
       setInputVal(Number(firstValue) + Number(secondValue));
+      setFirstValue(Number(firstValue) + Number(secondValue));
+      setSecondValue("");
     } else if (operation === "-") {
       setInputVal(Number(firstValue) - Number(secondValue));
+      setFirstValue(Number(firstValue) - Number(secondValue));
+      setSecondValue("");
     } else if (operation === "*") {
       setInputVal(Number(firstValue) * Number(secondValue));
+      setFirstValue(Number(firstValue) * Number(secondValue));
+      setSecondValue("");
     } else if (operation === "%") {
       setInputVal(Number(firstValue) % Number(secondValue));
+      setFirstValue(Number(firstValue) % Number(secondValue));
+      setSecondValue("");
     }
   };
 
