@@ -69,7 +69,7 @@ const Calculator = () => {
         <div className="border border-neutral-400 w-[350px] sm:w-[500px] rounded-md shadow-2xl">
           <div>
             <input
-              placeholder={bool ? "Enter second value" : "Enter first value"}
+              placeholder={bool ? "Enter Second Value" : "Enter First Value"}
               className="w-full px-5 py-7 rounded-sm outline-none text-3xl bg-black text-white"
               type="number"
               value={inputVal}
